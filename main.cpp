@@ -21,10 +21,12 @@ int main()
   //when user's entry is between a-z...  
   cout<<input<<" is a lower case letter!\n";}
   
-  else if (isalpha(num) != true){ 
+  else if (isalpha(num) != true && num != 36){ 
   //in all other cases... 
   cout<<"?! Pssh. What are you talking about?\n";}
   
+  else if (isalpha(num) != true && num == 36){
+  cout<<"$"<<"?! Pssh. What are you talking about?\n";}
   //no matter what they enter.. 
   cout<<"The ASCII value is: "<< num << endl;
 
